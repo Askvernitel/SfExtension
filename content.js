@@ -1,6 +1,5 @@
 // This script runs on every page
 console.log('Page Info Extension loaded on:', window.location.href);
-
 // Add a listener for messages from the popup
 browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
 	if (message.action === 'getPageInfo') {
