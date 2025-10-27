@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Page Info Extension",
+  "version": "1.0",
+  "description": "Shows page info and allows highlighting text",
+  "icons": {
+    "48": "icon.svg"
+  },
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Page Info"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
