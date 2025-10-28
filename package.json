@@ -2,6 +2,10 @@
   "devDependencies": {
     "@types/chrome": "^0.1.27",
     "@types/firefox": "^0.0.34",
-    "@types/firefox-webext-browser": "^143.0.0"
+    "@types/firefox-webext-browser": "^143.0.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "tsc": "^2.0.4"
   }
 }
