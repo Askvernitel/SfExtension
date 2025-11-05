@@ -1,9 +1,32 @@
 {
+
+  "scripts": {
+
+    "build": "webpack"
+
+  },
+
   "devDependencies": {
+
     "@types/chrome": "^0.1.27",
+
     "@types/firefox": "^0.0.34",
+
     "@types/firefox-webext-browser": "^143.0.0",
+
+    "enhanced-resolve": "^5.18.3",
+
+    "ts-loader": "^9.5.4",
+
     "tsc": "^2.0.4",
-    "typescript": "^5.9.3"
+
+    "typescript": "^5.9.3",
+
+    "webpack": "^5.102.1",
+
+    "webpack-cli": "^5.1.4"
+
   }
+
 }
+

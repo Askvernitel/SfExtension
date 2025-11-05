@@ -1,24 +1,22 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.ServiceRegistry = void 0;
-class ServiceRegistry {
-    serviceRegistry;
+function Service(constructor) {
+    return class extends constructor {
+    };
+}
+export class ServiceRegistry {
     constructor() {
-        this.serviceRegistry = new Map;
+        this.registry = new Map;
     }
     find(serviceName) {
-        return this.serviceRegistry.get(serviceName);
+        return this.registry.get(serviceName);
     }
     registerService(name, service) {
         if (!this.find(name)) {
             return false;
         }
-        this.serviceRegistry.set(name, service);
+        this.registry.set(name, service);
         return true;
     }
-    Service(constructor) {
-        return;
+    static Inject() {
     }
 }
-exports.ServiceRegistry = ServiceRegistry;
 //# sourceMappingURL=service.decorator.js.map

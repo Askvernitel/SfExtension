@@ -1,10 +1,8 @@
 export declare class ServiceRegistry {
-    serviceRegistry: Map<string, object>;
+    registry: Map<string, object>;
     constructor();
     private find;
     private registerService;
-    Service<T extends {
-        new (...args: any[]): {};
-    }>(constructor: T): void;
+    static Inject(): void;
 }
 //# sourceMappingURL=service.decorator.d.ts.map

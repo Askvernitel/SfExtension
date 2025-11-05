@@ -1,7 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-class Config {
-    _serviceOn = true;
+export default class Config {
+    constructor() {
+        this._serviceOn = true;
+    }
     set serviceOn(serviceOn) {
         this._serviceOn = serviceOn;
     }
@@ -9,5 +9,4 @@ class Config {
         return this._serviceOn;
     }
 }
-exports.default = Config;
 //# sourceMappingURL=config.js.map
